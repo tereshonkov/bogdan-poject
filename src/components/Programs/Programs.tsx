@@ -111,7 +111,6 @@ export default function Programs() {
         </div>
 
         <button className="main-button">
-          {/* <div className="main-button__glow"></div> */}
           <span className="main-button__text uppercase">
           подробнее 
             <br /> о бонусном блоке

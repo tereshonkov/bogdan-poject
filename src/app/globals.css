@@ -140,7 +140,7 @@ body {
     #03ffff 38.65%,
     rgba(3, 255, 255, 0) 100%
   );
-  filter: blur(50px);
+  filter: blur(80px);
   opacity: 1;
   pointer-events: none;
 }

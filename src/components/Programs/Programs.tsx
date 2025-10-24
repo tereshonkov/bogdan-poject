@@ -56,14 +56,16 @@ export default function Programs() {
           </div>
         </div>
 
-        <button className="main-button">
+        <div className="relative">
+          <div className="bg-[radial-gradient(147.35%_497.44%_at_0%_58.13%,#00FFFF_20.71%,#6141D4_100%)] blur-[120px] absolute top-1/2 left-1/2 -translate-1/2 w-[200px] h-[100px] rounded-full -z-10"></div>
+        <button className="main-button border-custom">
           <div className="main-button__glow"></div>
           <span className="main-button__text">
             ОТКРЫТЬ ВСЮ
             <br /> ПРОГРАММУ КУРСА
           </span>
         </button>
-
+        </div>
       </div>
       <div className="mt-[52px] flex flex-col items-center gap-8 w-[335px]">
         <div className="w-[313px] rounded-[22px] relative overflow-hidden border border-[rgba(217,217,217,0.1)]">
@@ -75,9 +77,14 @@ export default function Programs() {
   ]"
           ></div>
           <div className="w-full flex flex-col gap-4 p-6">
-            <Image width={30} height={30} alt="icon-lock" src="/programs/bonus.png" />
+            <Image
+              width={30}
+              height={30}
+              alt="icon-lock"
+              src="/programs/bonus.png"
+            />
             <h4 className="font-sans font-bold text-(--pirple) text-[24px]">
-            Бонусный блок
+              Бонусный блок
             </h4>
             <Image
               width={313}
@@ -87,7 +94,7 @@ export default function Programs() {
             />
             <div className="flex items-center gap-2 mb-[13px]">
               <p className="text-(--text-green) font-extrabold tetx-[16px]">
-              Уроки
+                Уроки
               </p>
               <Image
                 width={44}
@@ -105,18 +112,17 @@ export default function Programs() {
               Результат
             </h3>
             <p className="text-[16px] font-normal text-(--whites) font-sans leading-[1.15]">
-            Научишься искать чужие связки и зарабатывать вместе с китами рынка
+              Научишься искать чужие связки и зарабатывать вместе с китами рынка
             </p>
           </div>
         </div>
 
         <button className="main-button">
           <span className="main-button__text uppercase">
-          подробнее 
+            подробнее
             <br /> о бонусном блоке
           </span>
         </button>
-
       </div>
     </section>
   );

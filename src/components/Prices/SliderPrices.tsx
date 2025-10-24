@@ -19,13 +19,20 @@ export default function SliderPrices() {
     <div className="overflow-hidden mt-8" ref={emblaRef}>
       <div className="flex">
         <div className="flex-[0_0_100%] min-w-0 flex justify-center items-center">
-          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px]">
+          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px] border border-[rgba(217,217,217,0.1)]">
             <div className="h-[272px] relative">
               <Image
                 width={295}
                 height={272}
                 alt="price-1"
                 src="/prices/batiscaf.png"
+              />
+              <Image
+                width={295}
+                height={2}
+                alt="line"
+                src="/prices/line-prices.png"
+                className="absolute bottom-0 left-0"
               />
               <h3 className="font-sans font-bold text-(--secondary) text-[32px] absolute bottom-8 left-0 text-center leading-[1.15]">
                 Батискаф для погружения
@@ -111,13 +118,20 @@ export default function SliderPrices() {
           </div>
         </div>
         <div className="flex-[0_0_100%] min-w-0 flex justify-center items-center">
-          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px]">
+          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px] border border-[rgba(217,217,217,0.1)]">
             <div className="h-[272px] relative">
               <Image
                 width={295}
                 height={272}
                 alt="price-1"
                 src="/prices/base.png"
+              />
+              <Image
+                width={295}
+                height={2}
+                alt="line"
+                src="/prices/line-prices.png"
+                className="absolute bottom-0 left-0"
               />
               <h3 className="font-sans font-bold text-(--secondary) text-[32px] absolute bottom-8 left-0 text-center leading-[1.15] w-full">
                 База
@@ -220,13 +234,20 @@ export default function SliderPrices() {
           </div>
         </div>
         <div className="flex-[0_0_100%] min-w-0 flex justify-center items-center">
-          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px]">
+          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px] border border-[rgba(217,217,217,0.1)]">
             <div className="h-[272px] relative">
               <Image
                 width={295}
                 height={272}
                 alt="price-1"
                 src="/prices/price-3.png"
+              />
+              <Image
+                width={295}
+                height={2}
+                alt="line"
+                src="/prices/line-prices.png"
+                className="absolute bottom-0 left-0"
               />
               <h3 className="font-sans font-bold text-(--secondary) text-[32px] absolute bottom-8 left-0 text-center leading-[1.15] w-full">
                 Байкал на минималках
@@ -263,7 +284,8 @@ export default function SliderPrices() {
                     className="w-11 h-11 absolute -left-1 -top-3"
                   />
                   <p className="text-[14px] leading-[1.15] text-(--whites) font-normal max-w-[200px] ml-[50px]">
-                    Чат на 1 месяц<br />
+                    Чат на 1 месяц
+                    <br />
                     <span className="font-bold text-(--secondary)">
                       с действующими баерами{" "}
                     </span>
@@ -271,20 +293,20 @@ export default function SliderPrices() {
                   </p>
                 </div>
                 <div className="flex relative mt-3.5">
-                <Image
+                  <Image
                     width={24}
                     height={24}
                     alt="number one"
                     src="/prices/plus.png"
                     className="w-11 h-11 absolute -left-1 -top-3"
                   />
-                <p className="text-[14px] leading-[1.15] text-(--whites) font-normal max-w-[200px] ml-[50px]">
-                  <span className="font-bold text-(--secondary)">
-                  Увеличение заработка на 30%{" "}
-                  </span>
-                  (по вашему Qкоду в нашей пп для вас ставки будут выше)
-                </p>
-              </div>
+                  <p className="text-[14px] leading-[1.15] text-(--whites) font-normal max-w-[200px] ml-[50px]">
+                    <span className="font-bold text-(--secondary)">
+                      Увеличение заработка на 30%{" "}
+                    </span>
+                    (по вашему Qкоду в нашей пп для вас ставки будут выше)
+                  </p>
+                </div>
               </div>
               <div className="flex flex-col mt-[30px] relative z-20">
                 <p className="text-(--secondary) text-[18px] text-center font-light">
@@ -308,15 +330,18 @@ export default function SliderPrices() {
           </div>
         </div>
         <div className="flex-[0_0_100%] min-w-0 flex justify-center items-center">
-          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px]">
+          <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px] border border-[rgba(217,217,217,0.1)]">
             <div className="h-[272px] relative">
+              <Image fill alt="price-1" src="/prices/price-4.png" />
               <Image
-                fill
-                alt="price-1"
-                src="/prices/price-4.png"
+                width={295}
+                height={2}
+                alt="line"
+                src="/prices/line-prices.png"
+                className="absolute bottom-0 left-0"
               />
               <h3 className="font-sans font-bold text-(--secondary) text-[32px] absolute bottom-8 left-0 text-center leading-[1.15] w-full">
-              Марианская впадина
+                Марианская впадина
               </h3>
             </div>
             <div className="px-6 py-[18px] bg-[linear-gradient(180deg,#000000_0%,rgba(0,0,0,0)_100%)]">
@@ -350,7 +375,8 @@ export default function SliderPrices() {
                     className="w-11 h-11 absolute -left-1 -top-3"
                   />
                   <p className="text-[14px] leading-[1.15] text-(--whites) font-normal max-w-[200px] ml-[50px]">
-                    Чат на 1 месяц<br />
+                    Чат на 1 месяц
+                    <br />
                     <span className="font-bold text-(--secondary)">
                       с действующими баерами{" "}
                     </span>
@@ -358,20 +384,20 @@ export default function SliderPrices() {
                   </p>
                 </div>
                 <div className="flex relative mt-3.5">
-                <Image
+                  <Image
                     width={24}
                     height={24}
                     alt="number one"
                     src="/prices/plus.png"
                     className="w-11 h-11 absolute -left-1 -top-3"
                   />
-                <p className="text-[14px] leading-[1.15] text-(--whites) font-normal max-w-[200px] ml-[50px]">
-                  <span className="font-bold text-(--secondary)">
-                  Увеличение заработка на 30%{" "}
-                  </span>
-                  (по вашему Qкоду в нашей пп для вас ставки будут выше)
-                </p>
-              </div>
+                  <p className="text-[14px] leading-[1.15] text-(--whites) font-normal max-w-[200px] ml-[50px]">
+                    <span className="font-bold text-(--secondary)">
+                      Увеличение заработка на 30%{" "}
+                    </span>
+                    (по вашему Qкоду в нашей пп для вас ставки будут выше)
+                  </p>
+                </div>
               </div>
               <div className="flex flex-col mt-[30px] relative z-20">
                 <p className="text-(--secondary) text-[18px] text-center font-light">

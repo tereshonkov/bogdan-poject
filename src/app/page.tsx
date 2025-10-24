@@ -4,10 +4,18 @@ import Cources from '@/components/Cources/Cources';
 import Image from 'next/image';
 import Programs from '@/components/Programs/Programs';
 import Prices from '@/components/Prices/Prices';
+import Support from '@/components/Support/Support';
+import Credit from '@/components/Credit/Credit';
+import Howit from '@/components/Howit/Howit';
+import Whywe from '@/components/Whywe/Whywe';
+import History from '@/components/History/History';
+import Speakers from '@/components/Speakers/Speakers';
+import Fiq from '@/components/Fiq/Fiq';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
-    <div className="container relative">
+    <div className="container relative overflow-hidden">
       <Header/>
       <main>
         <Foryou />
@@ -16,7 +24,17 @@ export default function Home() {
         <Image width={160} height={498} alt="bg-bottom" src="/boobles-2.png" className="absolute top-[2125px] right-0 -z-10"/>
         <Programs />
         <Prices />
+        <Support />
+        <Credit />
+        <Howit />
+        <Whywe />
+        <History />
+        <Speakers />
+        <Fiq />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

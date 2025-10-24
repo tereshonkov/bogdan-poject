@@ -8,7 +8,7 @@ export default function Programs() {
         Программа
         <br /> курса:
       </h2>
-      <div className="mt-[32px] flex flex-col items-center gap-[32px] w-[335px]">
+      <div className="mt-8 flex flex-col items-center gap-8 w-[335px]">
         <div className="w-[313px] rounded-[22px] relative overflow-hidden border border-[rgba(217,217,217,0.1)]">
           <div
             className="
@@ -17,7 +17,7 @@ export default function Programs() {
     bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0.9)_0%,rgba(3,255,255,0.45)_35%,rgba(3,255,255,0.5)_100%)]
   ]"
           ></div>
-          <div className="w-full flex flex-col gap-[16px] p-[24px]">
+          <div className="w-full flex flex-col gap-4 p-6">
             <span className="font-digits text-[24px] text-(--secondary) font-light">
               01.
             </span>
@@ -44,7 +44,7 @@ export default function Programs() {
           </div>
           <div
             className="
- w-full h-full p-[24px] flex flex-col gap-[16px] relative bg-[url('/programs/bg-card.png')] bg-cover bg-center"
+ w-full h-full p-6 flex flex-col gap-4 relative bg-[url('/programs/bg-card.png')] bg-cover bg-center"
           >
             <h3 className="font-bold font-sans text-[24px] text-(--whites)">
               Результат
@@ -65,7 +65,7 @@ export default function Programs() {
         </button>
 
       </div>
-      <div className="mt-[52px] flex flex-col items-center gap-[32px] w-[335px]">
+      <div className="mt-[52px] flex flex-col items-center gap-8 w-[335px]">
         <div className="w-[313px] rounded-[22px] relative overflow-hidden border border-[rgba(217,217,217,0.1)]">
           <div
             className="
@@ -74,7 +74,7 @@ export default function Programs() {
     bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0.9)_0%,rgba(3,255,255,0.45)_35%,rgba(3,255,255,0.5)_100%)]
   ]"
           ></div>
-          <div className="w-full flex flex-col gap-[16px] p-[24px]">
+          <div className="w-full flex flex-col gap-4 p-6">
             <Image width={30} height={30} alt="icon-lock" src="/programs/bonus.png" />
             <h4 className="font-sans font-bold text-(--pirple) text-[24px]">
             Бонусный блок
@@ -99,7 +99,7 @@ export default function Programs() {
           </div>
           <div
             className="
- w-full h-full p-[24px] flex flex-col gap-[16px] relative bg-[url('/programs/bg-card.png')] bg-cover bg-center"
+ w-full h-full p-6 flex flex-col gap-4 relative bg-[url('/programs/bg-card.png')] bg-cover bg-center"
           >
             <h3 className="font-bold font-sans text-[24px] text-(--whites)">
               Результат

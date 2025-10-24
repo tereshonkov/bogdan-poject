@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section className="px-[15px] flex flex-col mb-[22px]">
+    <section className="px-[15px] flex flex-col mb-[22px] relative">
+        <Image width={374} height={314} alt="logo-footer" src="/footer/bg.png" className="absolute -bottom-28 -right-17 -z-10"/>
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-3 relative">
           <Image

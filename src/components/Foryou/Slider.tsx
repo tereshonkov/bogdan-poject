@@ -42,13 +42,13 @@ export default function Slider() {
                   bg-[rgba(3,224,255,0.02)] filter blur-[100px] z-0"
             ></div>
             <div>
-              <div className="w-full h-[210px] py-[16px] px-[20px] relative mb-[14px]">
+              <div className="w-full h-[210px] py-4 px-5 relative mb-3.5">
                 <span className="font-digits text-[32px] text-(--secondary) font-light">
                   0.1
                 </span>
                 <div className="w-[282px] h-px bg-[url('/Foryou/line.png')] bg-no-repeat bg-contain"></div>
                 <div className="w-[126px] h-px bg-[url('/Foryou/line-2.png')] bg-no-repeat bg-cover rotate-90"></div>
-                <div className="mt-[14px] ml-[44px] flex flex-col">
+                <div className="mt-3.5 ml-11 flex flex-col">
                   <h3 className="text-(--whites) font-sans font-bold text-[32px]">
                     Настя
                   </h3>
@@ -67,7 +67,7 @@ export default function Slider() {
                   src="/Foryou/nastya.png"
                   alt="slider-image-1"
                 />
-                <div className="absolute bottom-[32px] left-[61px]">
+                <div className="absolute bottom-8 left-[61px]">
                   <p className="text-(--secondary) font-sans font-bold text-[18px]">После</p>
                   <p className="max-w-[168px] font-sans text-[16px] text-(--whites) font-normal">обучения в первый месяц заработала</p>
                   <p className="text-(--whites) font-sans font-bold text-[23px]">40.000 рублей</p>
@@ -132,13 +132,13 @@ export default function Slider() {
                   bg-[rgba(3,224,255,0.02)] filter blur-[100px] z-0"
             ></div>
             <div>
-              <div className="w-full h-[210px] py-[16px] px-[20px] relative mb-[14px]">
+              <div className="w-full h-[210px] py-4 px-5 relative mb-3.5">
                 <span className="font-digits text-[32px] text-(--secondary) font-light">
                   0.3
                 </span>
                 <div className="w-[282px] h-px bg-[url('/Foryou/line.png')] bg-no-repeat bg-contain"></div>
                 <div className="w-[126px] h-px bg-[url('/Foryou/line-2.png')] bg-no-repeat bg-cover rotate-90"></div>
-                <div className="mt-[14px] ml-[44px] flex flex-col">
+                <div className="mt-3.5 ml-11 flex flex-col">
                   <h3 className="text-(--secondary) font-sans font-bold text-[24px] max-w-[182px]">
                     Обычный человек
                   </h3>
@@ -173,13 +173,13 @@ export default function Slider() {
                   bg-[rgba(3,224,255,0.02)] filter blur-[100px] z-0"
             ></div>
             <div>
-              <div className="w-full h-[210px] py-[16px] px-[20px] relative mb-[14px]">
+              <div className="w-full h-[210px] py-4 px-5 relative mb-3.5">
                 <span className="font-digits text-[32px] text-(--secondary) font-light">
                   0.4
                 </span>
                 <div className="w-[282px] h-px bg-[url('/Foryou/line.png')] bg-no-repeat bg-contain"></div>
                 <div className="w-[126px] h-px bg-[url('/Foryou/line-2.png')] bg-no-repeat bg-cover rotate-90"></div>
-                <div className="mt-[14px] ml-[44px] flex flex-col">
+                <div className="mt-3.5 ml-11 flex flex-col">
                   <h3 className="text-(--secondary) font-sans font-bold text-[24px] max-w-[182px]">
                     Обычный человек
                   </h3>
@@ -214,13 +214,13 @@ export default function Slider() {
                   bg-[rgba(3,224,255,0.02)] filter blur-[100px] z-0"
             ></div>
             <div>
-              <div className="w-full h-[210px] py-[16px] px-[20px] relative mb-[14px]">
+              <div className="w-full h-[210px] py-4 px-5 relative mb-3.5">
                 <span className="font-digits text-[32px] text-(--secondary) font-light">
                   0.5
                 </span>
                 <div className="w-[282px] h-px bg-[url('/Foryou/line.png')] bg-no-repeat bg-contain"></div>
                 <div className="w-[126px] h-px bg-[url('/Foryou/line-2.png')] bg-no-repeat bg-cover rotate-90"></div>
-                <div className="mt-[14px] ml-[44px] flex flex-col">
+                <div className="mt-3.5 ml-11 flex flex-col">
                   <h3 className="text-(--secondary) font-sans font-bold text-[24px] max-w-[182px]">
                     Обычный человек
                   </h3>
@@ -255,13 +255,13 @@ export default function Slider() {
                   bg-[rgba(3,224,255,0.02)] filter blur-[100px] z-0"
             ></div>
             <div>
-              <div className="w-full h-[210px] py-[16px] px-[20px] relative mb-[14px]">
+              <div className="w-full h-[210px] py-4 px-5 relative mb-3.5">
                 <span className="font-digits text-[32px] text-(--secondary) font-light">
                   0.6
                 </span>
                 <div className="w-[282px] h-px bg-[url('/Foryou/line.png')] bg-no-repeat bg-contain"></div>
                 <div className="w-[126px] h-px bg-[url('/Foryou/line-2.png')] bg-no-repeat bg-cover rotate-90"></div>
-                <div className="mt-[14px] ml-[44px] flex flex-col">
+                <div className="mt-3.5 ml-11 flex flex-col">
                   <h3 className="text-(--secondary) font-sans font-bold text-[24px] max-w-[182px]">
                     Обычный человек
                   </h3>
@@ -282,10 +282,10 @@ export default function Slider() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between absolute top-[435px] left-0 w-full px-[16px]">
+      <div className="flex items-center justify-between absolute top-[435px] left-0 w-full px-4">
         <button
           onClick={scrollPrev}
-          className="w-[32px] h-[32px] rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)]"
+          className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)]"
         >
           <Image
             src="/Foryou/vector-left.png"
@@ -296,7 +296,7 @@ export default function Slider() {
         </button>
         <button
           onClick={scrollNext}
-          className="w-[32px] h-[32px] rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)]"
+          className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)]"
         >
           <Image
             src="/Foryou/vector-right.png"

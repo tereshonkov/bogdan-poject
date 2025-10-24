@@ -19,7 +19,7 @@ export default function Accardion() {
         <Disclosure key={index}>
           {({ open }) => (
             <>
-              <DisclosureButton className="flex gap-[23px] w-full">
+              <DisclosureButton className="flex items-center gap-[23px] w-full">
                 <Image
                   width={52}
                   height={52}

@@ -20,7 +20,7 @@ export default function Foryou() {
       <h2 className="[font-family:var(--soyuz)] text-(--whites) text-[40px] text-center font-bold w-[335px] md:text-[60px] md:w-[630px]">
         Это для тебя, если ты:
       </h2>
-      <div className="absolute top-[110px] left-1/2 -translate-x-1/2 w-[295px] h-[280px] rounded-full bg-[rgba(217,217,217,0.15)] filter blur-[50px] md:w-[624px] md:h-[325px] md:blur-[150px] md:bg-[rgba(217,217,217,0.08)] md:top-[200px]"></div>
+      <div className="absolute top-[110px] left-1/2 -translate-x-1/2 w-[295px] h-[280px] rounded-full bg-[rgba(217,217,217,0.15)] filter blur-[50px] md:w-[624px] md:h-[325px] md:blur-[150px] md:top-[200px]"></div>
       <Slider />
     </section>
   );

@@ -50,7 +50,7 @@ export default function Slider() {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between absolute top-[435px] left-0 w-full px-4 md:top-[480px]">
+        <div className="flex items-center justify-between absolute top-[435px] left-0 w-full px-4 md:top-[542px]">
           <button
             onClick={scrollPrev}
             className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)] md:w-16 md:h-16"

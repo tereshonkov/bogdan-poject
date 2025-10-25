@@ -29,6 +29,25 @@ body {
   font-family: "Inter", "Montserrat", sans-serif;
 }
 
+.embla {
+  overflow: hidden;
+  position: relative;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -8px; /* для gap */
+}
+
+.embla__slide {
+  flex: 0 0 auto; /* критично для Embla */
+  width: 304px;   /* ширина карточки */
+  margin-left: 8px; /* gap между слайдами */
+}
+
 .gradient-container {
   background: linear-gradient(
       0deg,

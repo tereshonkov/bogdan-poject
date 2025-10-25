@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Home() {
   return (
-    <div className="container relative overflow-hidden">
+    <div className="w-full relative overflow-hidden">
       <Header />
       <main>
         <Foryou />

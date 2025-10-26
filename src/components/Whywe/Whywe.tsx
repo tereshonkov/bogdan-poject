@@ -28,7 +28,7 @@ export default function Whywe() {
         быть
         <br /> на обученние:
       </h2>
-      <div className="flex flex-col gap-9 mt-8 w-[317px]">
+      <div className="flex flex-col gap-9 mt-8 w-[317px] md:w-[489px] lg:w-[718px] lg:mt-12 xl:w-[800px] 2xl:w-[1056px]">
         <div className="flex relative">
           <Image
             width={24}
@@ -37,9 +37,9 @@ export default function Whywe() {
             src="/prices/plus.png"
             className="w-11 h-11 absolute -left-2 -top-3"
           />
-          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11">
+          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11 lg:text-[24px] 2xl:text-[26px]">
             Лучший на рынке
-            <br />
+            <br className="md:hidden"/>
             <span className="font-normal text-(--whites)">
               обучающий материал по арбитражу от экспертов
             </span>
@@ -53,7 +53,7 @@ export default function Whywe() {
             src="/prices/plus.png"
             className="w-11 h-11 absolute -left-2 -top-3"
           />
-          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11">
+          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11 lg:text-[24px] 2xl:text-[26px]">
             Доступ в нашу партнерскую программу где ставки на товары выше на
             100%.
             <span className="font-normal text-(--whites)">
@@ -76,7 +76,7 @@ export default function Whywe() {
             src="/prices/plus.png"
             className="w-11 h-11 absolute -left-2 -top-3"
           />
-          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11">
+          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11 lg:text-[24px] 2xl:text-[26px]">
             Доступ ко всем платным инстурментам на 1-2 месяца
             <span className="font-normal text-(--whites)">
               {" "}
@@ -93,7 +93,7 @@ export default function Whywe() {
             src="/prices/plus.png"
             className="w-11 h-11 absolute -left-2 -top-3"
           />
-          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11">
+          <p className="text-[18px] font-bold leading-[1.15] text-(--secondary) ml-11 lg:text-[24px] 2xl:text-[26px]">
             Возможность попасть в нашу команду,
             <span className="font-normal text-(--whites)">
               {" "}
@@ -102,7 +102,7 @@ export default function Whywe() {
           </p>
         </div>
       </div>
-      <div className="mt-[52px]">
+      <div className="mt-[52px] md:w-[489px] lg:w-[718px] xl:w-[800px] 2xl:w-[1056px]">
       <Button>Принять участие</Button>
       </div>
     </section>

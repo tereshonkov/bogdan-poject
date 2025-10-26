@@ -19,11 +19,11 @@ export default function Whywe() {
         src="/whywe/boobles-whywe-2.png"
         className="absolute -top-20 right-0 -z-10"
       />
-      <h2 className="[font-family:var(--soyuz)] text-[40px] text-(--whites) leading-[1.15] font-bold text-center">
+      <h2 className="[font-family:var(--soyuz)] text-[40px] text-(--whites) leading-[1.15] font-bold text-center md:text-[60px] lg:text-[80px] xl:text-[100px]">
         Какие{" "}
         <span className="text-(--secondary)">
           плюсы
-          <br />
+          <br className="md:hidden"/>
         </span>{" "}
         быть
         <br /> на обученние:

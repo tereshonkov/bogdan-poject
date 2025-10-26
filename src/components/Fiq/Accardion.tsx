@@ -14,7 +14,7 @@ export default function Accardion() {
     { title: "У меня есть проблемы с оплатой", content: "Напиши нашему менеджеру" },
   ];
   return (
-    <div className="flex flex-col items-center gap-6 w-[335px]">
+    <div className="flex flex-col items-center gap-6 w-[335px] md:w-[580px] lg:w-[718px] xl:w-[800px] 2xl:w-[1078px]">
       {items.map((item, index) => (
         <Disclosure key={index}>
           {({ open }) => (
@@ -27,7 +27,7 @@ export default function Accardion() {
                   src={open ? "/fiq/fiq_arrow-up.png" : "/fiq/fiq_arrow.png"}
                   className="w-[52px] h-[52px]"
                 />
-                <span className="font-bold text-(--secondary) text-[16px] text-left leading-[1.15]">
+                <span className="font-bold text-(--secondary) text-[16px] text-left leading-[1.15] lg:text-[26px]">
                   {item.title}
                 </span>
               </DisclosureButton>
@@ -42,7 +42,7 @@ export default function Accardion() {
                 `}
               >
                 <DisclosurePanel static>
-                  <p className="text-(--whites) text-[18px] font-normal pb-4 leading-[1.15] text-left ml-[75px]">
+                  <p className="text-(--whites) text-[18px] font-normal pb-4 leading-[1.15] text-left ml-[75px] lg:text-[26px]">
                     {item.content}
                   </p>
                 </DisclosurePanel>

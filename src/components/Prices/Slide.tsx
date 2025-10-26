@@ -8,15 +8,16 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 
-export default function SlideVariantOne({
-  title,
-  imgPath,
-  accardionTitle,
+export default function Slide({
+  title, // Заголовок у верхньому блоці із зображенням
+  imgPath, // Шлях до зображення у верхньому блоці
+  accardionTitle, // Заголовок акордеону
   children,
-  limit,
-  oldPrice,
-  newPrice,
-  accardionItems,
+  limit, // Текст під акордеоном (наприклад, "Без ліміту")
+  oldPrice, // Стара ціна
+  newPrice, // Нова ціна
+  accardionItems, // Кількість елементів акордеону, які можна розгорнути
+  bonus, // Додати кнопку +Бонус
 }: {
   title?: string;
   imgPath?: string;
@@ -26,10 +27,11 @@ export default function SlideVariantOne({
   oldPrice?: string;
   newPrice?: string;
   accardionItems?: number;
+  bonus?: boolean;
 }) {
   const items = React.Children.toArray(children);
   return (
-    <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px] border border-[rgba(217,217,217,0.1)] lg:w-[324px] xl:w-[546px] 2xl:w-[514px]">
+    <div className="w-[295px] flex flex-col rounded-[22px] overflow-hidden bg-[rgba(0,2,17,0.08)] backdrop-blur-[6.35px] border border-[rgba(217,217,217,0.1)] lg:w-[324px] lg:h-[945px] xl:h-auto xl:w-[546px] 2xl:w-[514px]">
       <div className="h-[272px] relative 2xl:h-[365px]">
         <Image
           width={295}
@@ -60,7 +62,7 @@ export default function SlideVariantOne({
                   </h5>
                   <div className="w-11 h-11 relative">
                     <picture>
-                      <source srcSet="/prices/btn-next-lg.png" media="(min-width: 1024px)" />
+                      {/* <source srcSet="/prices/btn-next-lg.png" media="(min-width: 1024px)" /> */}
                       <Image
                         fill
                         alt="icon-check"
@@ -69,19 +71,42 @@ export default function SlideVariantOne({
                             ? "/programs/btn-down.png"
                             : "/programs/btn-next.png"
                         }
-                        className="2xl:w-15 2xl:h-15 object-contain"
+                        className="2xl:w-15 2xl:h-15 object-contain cursor-pointer"
                       />
                     </picture>
                   </div>
                 </DisclosureButton>
                 <DisclosurePanel static className="mt-4 flex flex-col gap-4">
-                  {items?.slice(0, 3)}
+                  {bonus ? items?.slice(0, 1) : items?.slice(0, 3)}
                   {open && items?.slice(3, accardionItems)}
                 </DisclosurePanel>
               </>
             )}
           </Disclosure>
         </div>
+        {bonus && (
+          <button
+            className="
+    relative w-[259px] h-[50px] xl:h-[94px] md:w-full flex justify-center items-center
+    rounded-[10px] xl:rounded-[22px] overflow-hidden border border-[rgba(217,217,217,0.1)]
+    cursor-pointer mb-12 lg:mb-21 xl:mb-0 xl:mt-1 2xl:mt-12
+
+    before:absolute before:inset-0 before:z-10 before:opacity-0 before:transition-opacity before:duration-300
+    hover:before:opacity-100
+    before:bg-[linear-gradient(0deg,rgba(0,255,255,0.3),rgba(0,255,255,0.3)),linear-gradient(180deg,rgba(97,65,212,0.208)_0%,rgba(97,65,212,0.4)_60.52%,rgba(97,65,212,0.4)_100%),linear-gradient(0deg,rgba(15,18,47,0),rgba(15,18,47,0))]
+  ">
+            <div className="absolute inset-0 z-0 bg-[linear-gradient(0deg,#0F122F,#0F122F),linear-gradient(180deg,rgba(0,255,255,0.4)_0%,rgba(0,255,255,0.16)_100%),linear-gradient(180deg,rgba(58,107,255,0.1)_0%,rgba(58,107,255,0.25)_60.52%,rgba(58,107,255,0.25)_100%)]"></div>
+            <div
+              className="
+      absolute w-[794px] h-[124px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[50px] z-0
+      bg-[radial-gradient(50%_50%_at_50%_50%,#6141D4_38.65%,rgba(97,65,212,0)_100%)]
+    "
+            ></div>
+            <span className="relative z-20 text-[16px] text-(--whites) font-bold uppercase xl:text-[32px]">
+              + бонусный блок
+            </span>
+          </button>
+        )}
         <div className="flex flex-col mt-2 relative z-20">
           <p className="text-(--secondary) text-[18px] text-center font-light lg:text-[20px] xl:text-[24px] 2xl:text-[26px]">
             {limit || "Нет лимита"}
@@ -97,10 +122,12 @@ export default function SlideVariantOne({
               Оплатить
             </button>
             <button className="btn">
-              <span className="btn__text uppercase">в расрочку</span>
+              <span className="btn__text uppercase cursor-pointer">
+                в расрочку
+              </span>
             </button>
           </div>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[260px] h-[380px] rounded-full bg-[rgba(0,255,255,1)] filter blur-[250px] opacity-70 z-10"></div>
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[260px] h-[380px] rounded-full bg-[rgba(0,255,255,1)] filter blur-[250px] opacity-70 -z-10"></div>
         </div>
       </div>
     </div>

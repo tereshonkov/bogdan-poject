@@ -1,11 +1,7 @@
 "use client";
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect } from "react";
-import Image from "next/image";
-import Button from "../Button/Button";
-import SlideVariantOne from "./SlideVariantOne";
-import SlideVariantTwo from "./SlideVariantTwo";
-import SlideVariantThree from "./SlideVariantThree";
+import Slide from "./Slide";
 import AccardionItem from "./AccardionItem";
 
 export default function SliderPrices() {
@@ -20,11 +16,11 @@ export default function SliderPrices() {
     if (!emblaApi) return;
   }, [emblaApi]);
   return (
-    <div className="max-w-screen ml-[15px] xl:ml-[220px] 2xl:mt-[57px]">
+    <div className="max-w-screen ml-[15px] 2xl:ml-[220px] 2xl:mt-[57px]">
       <div className="overflow-hidden mt-8" ref={emblaRef}>
         <div className="flex">
           <div className="flex-[0_0_295px] min-w-0 flex justify-center items-center mr-3 lg:flex-[0_0_324px] lg:mr-[30px] xl:flex-[0_0_546px] xl:mr-4 2xl:flex-[0_0_546px] 2xl:mr-[30px]">
-            <SlideVariantOne accardionItems={16}>
+            <Slide accardionItems={16} bonus>
               <AccardionItem
                 text="Подборка"
                 textBold="самых полезных"
@@ -57,10 +53,10 @@ export default function SliderPrices() {
                 textTwo="и их работы"
                 imagePath="/prices/number-3.png"
               />
-            </SlideVariantOne>
+            </Slide>
           </div>
           <div className="flex-[0_0_295px] min-w-0 flex justify-center items-center mr-3 lg:flex-[0_0_324px] lg:mr-[30px] xl:flex-[0_0_546px] xl:mr-4 2xl:flex-[0_0_546px] 2xl:mr-[30px]">
-            <SlideVariantOne
+            <Slide
               accardionItems={16}
               title="База"
               imgPath="/prices/base.png"
@@ -89,10 +85,10 @@ export default function SliderPrices() {
                 textTwo="и их работы"
                 imagePath="/prices/number-3.png"
               />
-            </SlideVariantOne>
+            </Slide>
           </div>
           <div className="flex-[0_0_295px] min-w-0 flex justify-center items-center mr-3 lg:flex-[0_0_324px] lg:mr-[30px] xl:flex-[0_0_546px] xl:mr-4 2xl:flex-[0_0_546px] 2xl:mr-[30px]">
-          <SlideVariantOne
+          <Slide
               accardionItems={16}
               title="Байкал на минималках"
               imgPath="/prices/price-3.png"
@@ -122,10 +118,10 @@ export default function SliderPrices() {
                 textTwo="и их работы"
                 imagePath="/prices/number-3.png"
               />
-            </SlideVariantOne>
+            </Slide>
           </div>
           <div className="flex-[0_0_295px] min-w-0 flex justify-center items-center mr-3 lg:flex-[0_0_324px] lg:mr-[30px] xl:flex-[0_0_546px] xl:mr-4 2xl:flex-[0_0_546px] 2xl:mr-[30px]">
-          <SlideVariantOne
+          <Slide
               accardionItems={16}
               title="Марианская впадина"
               imgPath="/prices/price-4.png"
@@ -155,7 +151,7 @@ export default function SliderPrices() {
                 textTwo="и их работы"
                 imagePath="/prices/number-3.png"
               />
-            </SlideVariantOne>
+            </Slide>
           </div>
         </div>
       </div>

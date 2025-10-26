@@ -14,6 +14,11 @@ export default function Slider() {
     skipSnaps: false,
     dragFree: false,
     containScroll: "trimSnaps",
+    breakpoints: {
+      "(min-width: 1920px)": {
+        align: "center",
+      },
+    }
   });
 
   const scrollPrev = useCallback(() => {
@@ -30,16 +35,16 @@ export default function Slider() {
     if (!emblaApi) return;
   }, [emblaApi]);
   return (
-    <div className="max-w-screen md:px-6">
+    <div className="max-w-screen px-[30px] md:px-6 2xl:px-12">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
-          <div className="flex-[0_0_304px] min-w-0 mr-3 md:flex-[0_0_320px]">
+          <div className="flex-[0_0_304px] min-w-0 mr-3 md:flex-[0_0_320px] lg:flex-[0_0_100%] lg:flex lg:justify-center 2xl:flex-[0_0_1460px] 2xl:mr-[100px]">
             <UserCaseCard />
           </div>
           {data.map((item: SliderForYouProps, index) => (
             <div
               key={index}
-              className="flex-[0_0_304px] min-w-0 mr-2 md:flex-[0_0_320px]"
+              className="flex-[0_0_304px] min-w-0 mr-2 md:flex-[0_0_320px] lg:flex-[0_0_100%] lg:flex lg:justify-center 2xl:flex-[0_0_1460px] 2xl:mr-[100px]"
             >
               <DefaultCard
                 number={item.number}
@@ -50,10 +55,10 @@ export default function Slider() {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between absolute top-[435px] left-0 w-full px-4 md:top-[542px]">
+        <div className="flex items-center justify-between absolute top-[435px] left-0 w-full px-4 md:top-[542px] xl:top-[600px]">
           <button
             onClick={scrollPrev}
-            className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)] md:w-16 md:h-16"
+            className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)] md:w-16 md:h-16 2xl:hidden"
           >
             <picture>
               <source
@@ -70,9 +75,13 @@ export default function Slider() {
           </button>
           <button
             onClick={scrollNext}
-            className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)] md:w-16 md:h-16"
+            className="w-8 h-8 rounded-full border border-[rgba(3,255,255,1)] flex justify-center items-center bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0)_0%,rgba(3,255,255,0.2)_100%)] md:w-16 md:h-16 2xl:w-[90px] 2xl:h-[90px] 2xl:absolute right-5"
           >
             <picture>
+            <source
+                srcSet="/Foryou/2xl/vector-right.png"
+                media="(min-width: 1920px)"
+              />
               <source
                 srcSet="/Foryou/md/vector-right.png"
                 media="(min-width: 768px)"
@@ -82,6 +91,7 @@ export default function Slider() {
                 width={6}
                 height={6}
                 alt="left"
+                className="2xl:w-[17px] 2xl:h-[21px]"
               />
             </picture>
           </button>

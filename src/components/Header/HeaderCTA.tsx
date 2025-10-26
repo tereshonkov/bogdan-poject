@@ -13,7 +13,9 @@ export default function HeaderCTA() {
         на арбитраже трафика в соц сетях из любой точки мира.{" "}
       </p>
       </div>
+      <div className="2xl:w-[710px]">
       <Button>принять участие</Button>
+      </div>
     </div>
   );
 }

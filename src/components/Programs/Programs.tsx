@@ -1,126 +1,26 @@
-import Image from "next/image";
+import Card from "./Card";
+import Btn from "./Btn";
+import BonusCard from "./BonusCard";
 
 export default function Programs() {
   return (
-    <section className="flex flex-col items-center relative">
+    <section className="flex flex-col items-center relative 2xl:mt-[100px]">
       <div className="absolute top-[120px] left-1/2 -translate-x-1/2 w-[336px] h-[142px] rounded-full bg-[rgba(217,217,217,0.15)] filter blur-[50px]"></div>
-      <h2 className="[font-family:var(--soyuz)] text-(--whites) text-[40px] text-center font-bold max-w-[335px] leading-[1.15]">
+      <h2 className="[font-family:var(--soyuz)] text-(--whites) text-[40px] text-center font-bold max-w-[335px] leading-[1.15] md:text-[60px] md:max-w-[499px] xl:max-w-[852px] xl:text-[100px]">
         Программа
-        <br /> курса:
+        <br className="md:hidden"/> курса:
       </h2>
-      <div className="mt-8 flex flex-col items-center gap-8 w-[335px]">
-        <div className="w-[313px] rounded-[22px] relative overflow-hidden border border-[rgba(217,217,217,0.1)]">
-          <div
-            className="
-    absolute -top-24 left-[50%]
-    w-[500px] h-[300px] blur-[140px] pointer-events-none
-    bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0.9)_0%,rgba(3,255,255,0.45)_35%,rgba(3,255,255,0.5)_100%)]
-  ]"
-          ></div>
-          <div className="w-full flex flex-col gap-4 p-6">
-            <span className="font-digits text-[24px] text-(--secondary) font-light">
-              01.
-            </span>
-            <h4 className="font-sans font-bold text-(--secondary) text-[24px]">
-              Что такое арбитраж трафика?
-            </h4>
-            <Image
-              width={313}
-              height={1}
-              alt="line"
-              src="/programs/line-card.png"
-            />
-            <div className="flex items-center gap-2 mb-[13px]">
-              <p className="text-(--text-green) font-extrabold tetx-[16px]">
-                В этом уроке вы узнаете:
-              </p>
-              <Image
-                width={44}
-                height={44}
-                alt="icon-check"
-                src="/programs/btn-next.png"
-              />
-            </div>
-          </div>
-          <div
-            className="
- w-full h-full p-6 flex flex-col gap-4 relative bg-[url('/programs/bg-card.png')] bg-cover bg-center"
-          >
-            <h3 className="font-bold font-sans text-[24px] text-(--whites)">
-              Результат
-            </h3>
-            <p className="text-[16px] font-normal text-(--whites) font-sans leading-[1.15]">
-              Узнаешь что такое арбитраж трафика и сможешь выбрать страны, c
-              которыми будешь работать исходя из своего бюджета.
-            </p>
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="bg-[radial-gradient(147.35%_497.44%_at_0%_58.13%,#00FFFF_20.71%,#6141D4_100%)] blur-[120px] absolute top-1/2 left-1/2 -translate-1/2 w-[200px] h-[100px] rounded-full -z-10"></div>
-        <button className="main-button border-custom">
-          <div className="main-button__glow"></div>
-          <span className="main-button__text">
-            ОТКРЫТЬ ВСЮ
-            <br /> ПРОГРАММУ КУРСА
-          </span>
-        </button>
-        </div>
+      <div className="mt-8 flex flex-col items-center gap-8 w-[335px] md:w-full lg:gap-14 2xl:mt-[82px]">
+        <Card />
+        <Btn />
       </div>
-      <div className="mt-[52px] flex flex-col items-center gap-8 w-[335px]">
-        <div className="w-[313px] rounded-[22px] relative overflow-hidden border border-[rgba(217,217,217,0.1)]">
-          <div
-            className="
-    absolute -top-24 left-[50%]
-    w-[500px] h-[300px] blur-[140px] pointer-events-none
-    bg-[radial-gradient(50%_50%_at_50%_50%,rgba(3,255,255,0.9)_0%,rgba(3,255,255,0.45)_35%,rgba(3,255,255,0.5)_100%)]
-  ]"
-          ></div>
-          <div className="w-full flex flex-col gap-4 p-6">
-            <Image
-              width={30}
-              height={30}
-              alt="icon-lock"
-              src="/programs/bonus.png"
-            />
-            <h4 className="font-sans font-bold text-(--pirple) text-[24px]">
-              Бонусный блок
-            </h4>
-            <Image
-              width={313}
-              height={1}
-              alt="line"
-              src="/programs/line-card.png"
-            />
-            <div className="flex items-center gap-2 mb-[13px]">
-              <p className="text-(--text-green) font-extrabold tetx-[16px]">
-                Уроки
-              </p>
-              <Image
-                width={44}
-                height={44}
-                alt="icon-check"
-                src="/programs/btn-next.png"
-              />
-            </div>
-          </div>
-          <div
-            className="
- w-full h-full p-6 flex flex-col gap-4 relative bg-[url('/programs/bg-card.png')] bg-cover bg-center"
-          >
-            <h3 className="font-bold font-sans text-[24px] text-(--whites)">
-              Результат
-            </h3>
-            <p className="text-[16px] font-normal text-(--whites) font-sans leading-[1.15]">
-              Научишься искать чужие связки и зарабатывать вместе с китами рынка
-            </p>
-          </div>
-        </div>
+      <div className="mt-[52px] flex flex-col items-center gap-8 w-[335px] md:w-full lg:gap-14">
+        <BonusCard />
 
         <button className="main-button">
           <span className="main-button__text uppercase">
             подробнее
-            <br /> о бонусном блоке
+            <br className="lg:hidden"/> о бонусном блоке
           </span>
         </button>
       </div>

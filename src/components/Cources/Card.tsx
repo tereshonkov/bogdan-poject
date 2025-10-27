@@ -40,7 +40,7 @@ export default function Card({
     >
       {isHovered && hoverImg ? (
         <>
-        <Image width={imgWidth} height={imgHeight} alt="icon" src={hoverImg} />
+        <Image width={imgWidth} height={imgHeight} alt="icon" src={hoverImg} priority/>
         <p className="text-[14px] font-sans font-normal text-(--whites) leading-[1.15] lg:text-[20px] 2xl:text-[24px] 2xl:text-center">
             {text} <span className="font-sans font-bold"> {boldText} </span>
             {textTwo}

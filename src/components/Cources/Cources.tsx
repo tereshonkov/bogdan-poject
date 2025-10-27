@@ -37,7 +37,7 @@ export default function Cources() {
             text="Выбирать "
             boldText="прибыльные "
             textTwo="предложения"
-            hoverImg="/cources/2xl/icon1-hover.webp"
+            hoverImg="/cources/2xl/icon1-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -48,7 +48,7 @@ export default function Cources() {
             text="Выбирать "
             boldText="прибыльные "
             textTwo="предложения"
-            hoverImg="/cources/2xl/icon1-hover.webp"
+            hoverImg="/cources/2xl/icon1-hover.png"
           />
         </div>
 
@@ -72,7 +72,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon2.png"
             text="Создавать "
             boldText="яркие креативы"
-            hoverImg="/cources/2xl/icon2-hover.webp"
+            hoverImg="/cources/2xl/icon2-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -82,7 +82,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon2.png"
             text="Создавать "
             boldText="яркие креативы"
-            hoverImg="/cources/2xl/icon2-hover.webp"
+            hoverImg="/cources/2xl/icon2-hover.png"
           />
         </div>
 
@@ -102,7 +102,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon3.png"
             boldText="Настраивать "
             textTwo="техническую часть"
-            hoverImg="/cources/2xl/icon3-hover.webp"
+            hoverImg="/cources/2xl/icon3-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -112,7 +112,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon3.png"
             boldText="Настраивать "
             textTwo="техническую часть"
-            hoverImg="/cources/2xl/icon3-hover.webp"
+            hoverImg="/cources/2xl/icon3-hover.png"
           />
         </div>
 
@@ -132,7 +132,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon4.png"
             boldText="Запускать "
             textTwo="рекламные компании"
-            hoverImg="/cources/2xl/icon4-hover.webp"
+            hoverImg="/cources/2xl/icon4-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -142,7 +142,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon4.png"
             boldText="Запускать "
             textTwo="рекламные компании"
-            hoverImg="/cources/2xl/icon4-hover.webp"
+            hoverImg="/cources/2xl/icon4-hover.png"
           />
         </div>
         <div className="hidden md:block w-40 h-40 lg:hidden"></div>
@@ -166,7 +166,7 @@ export default function Cources() {
             text="Использовать "
             boldText="все необходимые "
             textTwo="инструменты"
-            hoverImg="/cources/2xl/icon5-hover.webp"
+            hoverImg="/cources/2xl/icon5-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -177,7 +177,7 @@ export default function Cources() {
             text="Использовать "
             boldText="все необходимые "
             textTwo="инструменты"
-            hoverImg="/cources/2xl/icon5-hover.webp"
+            hoverImg="/cources/2xl/icon5-hover.png"
           />
         </div>
 
@@ -197,7 +197,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon6.png"
             text="Продавать товары и услуги "
             boldText="по всему миру"
-            hoverImg="/cources/2xl/icon6-hover.webp"
+            hoverImg="/cources/2xl/icon6-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -207,7 +207,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon6.png"
             text="Продавать товары и услуги "
             boldText="по всему миру"
-            hoverImg="/cources/2xl/icon6-hover.webp"
+            hoverImg="/cources/2xl/icon6-hover.png"
           />
         </div>
 
@@ -227,7 +227,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon7.png"
             text="Анализировать и принимать"
             boldText="правильные решения"
-            hoverImg="/cources/2xl/icon7-hover.webp"
+            hoverImg="/cources/2xl/icon7-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -237,7 +237,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon7.png"
             text="Анализировать и принимать"
             boldText="правильные решения"
-            hoverImg="/cources/2xl/icon7-hover.webp"
+            hoverImg="/cources/2xl/icon7-hover.png"
           />
         </div>
 
@@ -263,7 +263,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon8.png"
             boldText="Зарабатывать"
             textTwo="в долларах, евро и криптовалютах"
-            hoverImg="/cources/2xl/icon8-hover.webp"
+            hoverImg="/cources/2xl/icon8-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -273,7 +273,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon8.png"
             boldText="Зарабатывать"
             textTwo="в долларах, евро и криптовалютах"
-            hoverImg="/cources/2xl/icon8-hover.webp"
+            hoverImg="/cources/2xl/icon8-hover.png"
           />
         </div>
       </div>

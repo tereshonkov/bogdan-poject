@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Card({
   imgWidth,
@@ -26,6 +26,12 @@ export default function Card({
   lgSrc?: string;
 }) {
   const [isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    if (hoverImg) {
+      const img = new window.Image();
+      img.src = hoverImg;
+    }
+  }, [hoverImg]);
   return (
     <div
       className="flex flex-col gap-3 justify-between card-gradient w-40 h-40 rounded-[10px] transition-all duration-300 ease-out hover:scale-105 hover:opacity-100 px-2.5 py-4 border border-[rgba(217,217,217,0.1)] lg:w-[295px] lg:h-[281px] lg:px-6 lg:py-[42px] xl:w-[287px] 2xl:w-[360px] 2xl:h-[360px] 2xl:items-center 2xl:py-[35px] 2xl:px-8"

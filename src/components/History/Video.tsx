@@ -3,10 +3,28 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Video() {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [showPlayer, setShowPlayer] = useState(false);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
+  const openPlayer = (videoSrc: string | undefined) => {
+    if (!videoSrc) return;
+    setActiveVideo(videoSrc);
+    setShowPlayer(true);
+  };
+
+  const closePlayer = () => {
+    setShowPlayer(false);
+    setActiveVideo(null);
+  };
   return (
     <div className="flex flex-wrap justify-center gap-[15px] mt-8 2xl:max-w-[1169px]">
-      <div className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]">
+      <div
+        className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]"
+        data-video="/mokVideo/video1.mp4"
+        onClick={(e) =>
+          openPlayer((e.currentTarget as HTMLElement).dataset.video)
+        }
+      >
         <div className="relative">
           <Image
             width={1}
@@ -44,12 +62,18 @@ export default function Video() {
             className="absolute top-0 left-0 -z-10"
           />
           <div className="absolute w-[312px] h-[170px] bg-[radial-gradient(147.35%_497.44%_at_0%_58.13%,#00FFFF_20.71%,#6141D4_100%)] blur-[150px] -z-10"></div>
-            <h4 className="text-[18px] font-bold text-center font-sans text-(--whites) lg:text-[28px] xl:text-[32px]">
-              Семкив
-            </h4>
+          <h4 className="text-[18px] font-bold text-center font-sans text-(--whites) lg:text-[28px] xl:text-[32px]">
+            Семкив
+          </h4>
         </div>
       </div>
-      <div className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]">
+      <div
+        className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]"
+        data-video="/mokVideo/video2.mp4"
+        onClick={(e) =>
+          openPlayer((e.currentTarget as HTMLElement).dataset.video)
+        }
+      >
         <div className="relative ">
           <Image
             width={1}
@@ -92,7 +116,13 @@ export default function Video() {
           </h4>
         </div>
       </div>
-      <div className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]">
+      <div
+        className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]"
+        data-video="/mokVideo/video3.mp4"
+        onClick={(e) =>
+          openPlayer((e.currentTarget as HTMLElement).dataset.video)
+        }
+      >
         <div className="relative ">
           <Image
             width={1}
@@ -135,7 +165,13 @@ export default function Video() {
           </h4>
         </div>
       </div>
-      <div className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]">
+      <div
+        className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]"
+        data-video="/mokVideo/video4.mp4"
+        onClick={(e) =>
+          openPlayer((e.currentTarget as HTMLElement).dataset.video)
+        }
+      >
         <div className="relative ">
           <Image
             width={1}
@@ -178,7 +214,13 @@ export default function Video() {
           </h4>
         </div>
       </div>
-      <div className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]">
+      <div
+        className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]"
+        data-video="/mokVideo/video5.mp4"
+        onClick={(e) =>
+          openPlayer((e.currentTarget as HTMLElement).dataset.video)
+        }
+      >
         <div className="relative ">
           <Image
             width={1}
@@ -221,21 +263,27 @@ export default function Video() {
           </h4>
         </div>
       </div>
-      <div className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]">
-        <div className="relative ">
+      <div
+        className="w-40 h-[152px] border border-[rgba(0,255,255,0.4)] rounded-xl overflow-hidden md:w-52 md:h-[212px] lg:w-[294px] lg:h-[279px] md:rounded-[15px] lg:rounded-[22px] xl:w-[376px] xl:h-[356px]"
+        data-video="/mokVideo/video6.mp4"
+        onClick={(e) =>
+          openPlayer((e.currentTarget as HTMLElement).dataset.video)
+        }
+      >
+        <div className="relative">
           <Image
             width={1}
             height={280}
             src="/students/line-right.png"
             alt="line right"
-            className="absolute top-0 right-5 z-10"
+            className="absolute top-0 right-5"
           />
           <Image
             width={32}
             height={32}
             src="/students/play.png"
             alt="Play icon"
-            className="w-8 h-8 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none md:w-12 md:h-12 lg:w-16 lg:h-16 xl:w-[70px] xl:h-[70px]"
+            className="w-8 h-8 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-12 md:h-12 lg:w-16 lg:h-16 xl:w-[70px] xl:h-[70px] z-10"
           />
           <picture>
             <source srcSet="/students/xl/6.png" media="(min-width: 1280px)" />
@@ -264,6 +312,32 @@ export default function Video() {
           </h4>
         </div>
       </div>
+
+      {showPlayer && activeVideo && (
+        <div
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+          onClick={closePlayer}
+        >
+          <div
+            className="relative w-[80vw] h-[80vh] rounded-2xl bg-black border border-[rgba(0,255,255,1)] py-2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <video
+              autoPlay
+              src={activeVideo}
+              controls
+              className="w-full h-full object-contain rounded-xl"
+            />
+
+            <button
+              onClick={closePlayer}
+              className="absolute -top-4 -right-4 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-[rgba(0,255,255,1)] backdrop-blur-[2.54px] bg-[rgba(0,255,255,0.15)] text-[rgba(0,255,255,1)] text-lg sm:text-2xl md:text-3xl shadow-lg z-50 cursor-pointer"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

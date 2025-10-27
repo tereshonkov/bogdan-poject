@@ -7,6 +7,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
+import ButtonGray from "../Button/ButtonGray";
 
 export default function Slide({
   title, // Заголовок у верхньому блоці із зображенням
@@ -90,7 +91,6 @@ export default function Slide({
     relative w-[259px] h-[50px] xl:h-[94px] md:w-full flex justify-center items-center
     rounded-[10px] xl:rounded-[22px] overflow-hidden border border-[rgba(217,217,217,0.1)]
     cursor-pointer mb-12 lg:mb-21 xl:mb-0 xl:mt-1 2xl:mt-12
-
     before:absolute before:inset-0 before:z-10 before:opacity-0 before:transition-opacity before:duration-300
     hover:before:opacity-100
     before:bg-[linear-gradient(0deg,rgba(0,255,255,0.3),rgba(0,255,255,0.3)),linear-gradient(180deg,rgba(97,65,212,0.208)_0%,rgba(97,65,212,0.4)_60.52%,rgba(97,65,212,0.4)_100%),linear-gradient(0deg,rgba(15,18,47,0),rgba(15,18,47,0))]
@@ -102,6 +102,7 @@ export default function Slide({
       bg-[radial-gradient(50%_50%_at_50%_50%,#6141D4_38.65%,rgba(97,65,212,0)_100%)]
     "
             ></div>
+            <div className="w-[394px] h-[124px] bg-[radial-gradient(50%_50%_at_50%_50%,#6141D4_38.65%,rgba(97,65,212,0)_100%)] blur-[100px] absolute top-1/2 left-1/2 -translate-1/2"></div>
             <span className="relative z-20 text-[16px] text-(--whites) font-bold uppercase xl:text-[32px]">
               + бонусный блок
             </span>
@@ -118,7 +119,7 @@ export default function Slide({
             {newPrice || "35.000"}
           </p>
           <div className="flex flex-col gap-2 mt-2 xl:gap-4 2xl:mt-8">
-            <button className="flex justify-center items-center uppercase font-bold text-[rgba(0,2,17,1)] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] py-5 px-10 rounded-lg button-gradient cursor-pointer font-sans h-[58px] relative md:w-full md:h-[58px] text-[16px] xl:h-[124px] xl:max-w-[509px] xl:rounded-[22px] xl:text-[32px] 2xl:max-w-full 2xl:w-full">
+            <button className="flex justify-center items-center uppercase font-bold text-[rgba(0,2,17,1)] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] py-5 px-10 rounded-lg button-gradient cursor-pointer font-sans h-[58px] relative md:w-full md:h-[58px] text-[16px] xl:h-[124px] xl:max-w-[509px] xl:rounded-[22px] xl:text-[32px] 2xl:max-w-full 2xl:w-full hover:shadow-[0_0_20px_rgba(3,255,255,0.6)] transition-shadow duration-300">
               Оплатить
             </button>
             <button className="btn">
@@ -126,6 +127,8 @@ export default function Slide({
                 в расрочку
               </span>
             </button>
+            <div className="xl:max-w-[509px]">
+            </div>
           </div>
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[260px] h-[380px] rounded-full bg-[rgba(0,255,255,1)] filter blur-[250px] opacity-70 -z-10"></div>
         </div>

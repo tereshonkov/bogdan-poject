@@ -37,6 +37,7 @@ export default function Cources() {
             text="Выбирать "
             boldText="прибыльные "
             textTwo="предложения"
+            hoverImg="/cources/2xl/icon1-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -47,6 +48,7 @@ export default function Cources() {
             text="Выбирать "
             boldText="прибыльные "
             textTwo="предложения"
+            hoverImg="/cources/2xl/icon1-hover.png"
           />
         </div>
 
@@ -70,6 +72,7 @@ export default function Cources() {
             imgPath="/cources/lg/icon2.png"
             text="Создавать "
             boldText="яркие креативы"
+            hoverImg="/cources/2xl/icon2-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -79,6 +82,7 @@ export default function Cources() {
             imgPath="/cources/2xl/icon2.png"
             text="Создавать "
             boldText="яркие креативы"
+            hoverImg="/cources/2xl/icon2-hover.png"
           />
         </div>
 
@@ -87,8 +91,8 @@ export default function Cources() {
             imgWidth={61}
             imgHeight={61}
             imgPath="/cources/icon3.png"
-            boldText= "Настраивать "
-            textTwo= "техническую часть"
+            boldText="Настраивать "
+            textTwo="техническую часть"
           />
         </div>
         <div className="hidden lg:block 2xl:hidden">
@@ -96,8 +100,9 @@ export default function Cources() {
             imgWidth={108}
             imgHeight={110}
             imgPath="/cources/lg/icon3.png"
-            boldText= "Настраивать "
-            textTwo= "техническую часть"
+            boldText="Настраивать "
+            textTwo="техническую часть"
+            hoverImg="/cources/2xl/icon3-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -105,8 +110,9 @@ export default function Cources() {
             imgWidth={244}
             imgHeight={190}
             imgPath="/cources/2xl/icon3.png"
-            boldText= "Настраивать "
-            textTwo= "техническую часть"
+            boldText="Настраивать "
+            textTwo="техническую часть"
+            hoverImg="/cources/2xl/icon3-hover.png"
           />
         </div>
 
@@ -115,8 +121,8 @@ export default function Cources() {
             imgWidth={75}
             imgHeight={75}
             imgPath="/cources/icon4.png"
-            boldText= "Запускать "
-            textTwo= "рекламные компании"
+            boldText="Запускать "
+            textTwo="рекламные компании"
           />
         </div>
         <div className="hidden lg:block 2xl:hidden">
@@ -124,8 +130,9 @@ export default function Cources() {
             imgWidth={121}
             imgHeight={116}
             imgPath="/cources/lg/icon4.png"
-            boldText= "Запускать "
-            textTwo= "рекламные компании"
+            boldText="Запускать "
+            textTwo="рекламные компании"
+            hoverImg="/cources/2xl/icon4-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -133,8 +140,9 @@ export default function Cources() {
             imgWidth={140}
             imgHeight={116}
             imgPath="/cources/2xl/icon4.png"
-            boldText= "Запускать "
-            textTwo= "рекламные компании"
+            boldText="Запускать "
+            textTwo="рекламные компании"
+            hoverImg="/cources/2xl/icon4-hover.png"
           />
         </div>
         <div className="hidden md:block w-40 h-40 lg:hidden"></div>
@@ -145,9 +153,9 @@ export default function Cources() {
             imgWidth={61}
             imgHeight={61}
             imgPath="/cources/icon5.png"
-            text= "Использовать "
-            boldText= "все необходимые "
-            textTwo= "инструменты"
+            text="Использовать "
+            boldText="все необходимые "
+            textTwo="инструменты"
           />
         </div>
         <div className="hidden lg:block 2xl:hidden">
@@ -155,9 +163,10 @@ export default function Cources() {
             imgWidth={121}
             imgHeight={121}
             imgPath="/cources/lg/icon5.png"
-            text= "Использовать "
-            boldText= "все необходимые "
-            textTwo= "инструменты"
+            text="Использовать "
+            boldText="все необходимые "
+            textTwo="инструменты"
+            hoverImg="/cources/2xl/icon5-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -165,9 +174,10 @@ export default function Cources() {
             imgWidth={187}
             imgHeight={208}
             imgPath="/cources/2xl/icon5.png"
-            text= "Использовать "
-            boldText= "все необходимые "
-            textTwo= "инструменты"
+            text="Использовать "
+            boldText="все необходимые "
+            textTwo="инструменты"
+            hoverImg="/cources/2xl/icon5-hover.png"
           />
         </div>
 
@@ -176,8 +186,8 @@ export default function Cources() {
             imgWidth={81}
             imgHeight={61}
             imgPath="/cources/icon6.png"
-            text= "Продавать товары и услуги "
-            boldText= "по всему миру"
+            text="Продавать товары и услуги "
+            boldText="по всему миру"
           />
         </div>
         <div className="hidden lg:block 2xl:hidden">
@@ -185,8 +195,9 @@ export default function Cources() {
             imgWidth={137}
             imgHeight={103}
             imgPath="/cources/lg/icon6.png"
-            text= "Продавать товары и услуги "
-            boldText= "по всему миру"
+            text="Продавать товары и услуги "
+            boldText="по всему миру"
+            hoverImg="/cources/2xl/icon6-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -194,8 +205,9 @@ export default function Cources() {
             imgWidth={257}
             imgHeight={196}
             imgPath="/cources/2xl/icon6.png"
-            text= "Продавать товары и услуги "
-            boldText= "по всему миру"
+            text="Продавать товары и услуги "
+            boldText="по всему миру"
+            hoverImg="/cources/2xl/icon6-hover.png"
           />
         </div>
 
@@ -204,8 +216,8 @@ export default function Cources() {
             imgWidth={63}
             imgHeight={71}
             imgPath="/cources/icon7.png"
-            text= "Анализировать"
-            boldText= "правильные решения"
+            text="Анализировать"
+            boldText="правильные решения"
           />
         </div>
         <div className="hidden lg:block 2xl:hidden">
@@ -213,8 +225,9 @@ export default function Cources() {
             imgWidth={107}
             imgHeight={121}
             imgPath="/cources/lg/icon7.png"
-            text= "Анализировать и принимать"
-            boldText= "правильные решения"
+            text="Анализировать и принимать"
+            boldText="правильные решения"
+            hoverImg="/cources/2xl/icon7-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -222,8 +235,9 @@ export default function Cources() {
             imgWidth={217}
             imgHeight={157}
             imgPath="/cources/2xl/icon7.png"
-            text= "Анализировать и принимать"
-            boldText= "правильные решения"
+            text="Анализировать и принимать"
+            boldText="правильные решения"
+            hoverImg="/cources/2xl/icon7-hover.png"
           />
         </div>
 
@@ -238,8 +252,8 @@ export default function Cources() {
             imgWidth={57}
             imgHeight={67}
             imgPath="/cources/icon8.png"
-            boldText= "Зарабатывать"
-            textTwo= "в долларах, евро и криптовалютах"
+            boldText="Зарабатывать"
+            textTwo="в долларах, евро и криптовалютах"
           />
         </div>
         <div className="hidden lg:block 2xl:hidden">
@@ -247,8 +261,9 @@ export default function Cources() {
             imgWidth={107}
             imgHeight={125}
             imgPath="/cources/lg/icon8.png"
-            boldText= "Зарабатывать"
-            textTwo= "в долларах, евро и криптовалютах"
+            boldText="Зарабатывать"
+            textTwo="в долларах, евро и криптовалютах"
+            hoverImg="/cources/2xl/icon8-hover.png"
           />
         </div>
         <div className="hidden 2xl:block">
@@ -256,15 +271,15 @@ export default function Cources() {
             imgWidth={209}
             imgHeight={224}
             imgPath="/cources/2xl/icon8.png"
-            boldText= "Зарабатывать"
-            textTwo= "в долларах, евро и криптовалютах"
+            boldText="Зарабатывать"
+            textTwo="в долларах, евро и криптовалютах"
+            hoverImg="/cources/2xl/icon8-hover.png"
           />
         </div>
-
       </div>
       <div className="mt-8 mb-[72px] md:hidden lg:block 2xl:mt-[99px]">
         <div className="md:h-20 lg:h-[124px] 2xl:w-[765px]">
-        <Button>Принять участие</Button>
+          <Button>Принять участие</Button>
         </div>
       </div>
     </section>

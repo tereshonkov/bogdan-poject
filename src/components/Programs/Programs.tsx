@@ -1,6 +1,7 @@
 import Card from "./Card";
 import Btn from "./Btn";
 import BonusCard from "./BonusCard";
+import ButtonGray from "../Button/ButtonGray";
 
 export default function Programs() {
   return (
@@ -12,17 +13,16 @@ export default function Programs() {
       </h2>
       <div className="mt-8 flex flex-col items-center gap-8 w-[335px] md:w-full lg:gap-14 2xl:mt-[82px]">
         <Card />
-        <Btn />
+        <div className="w-[313px] md:w-[542px] h-[58px] md:h-20 lg:h-[124px] lg:w-[740px] 2xl:w-[940px]">
+        <ButtonGray>Открыть всю программу курса</ButtonGray>
+        </div>
       </div>
       <div className="mt-[52px] flex flex-col items-center gap-8 w-[335px] md:w-full lg:gap-14">
         <BonusCard />
+        <div className="w-[313px] md:w-[542px] h-[58px] md:h-20 lg:h-[124px] lg:w-[740px] 2xl:w-[940px]">
+        <ButtonGray>подробнее о бонусном блоке</ButtonGray>
+        </div>
 
-        <button className="main-button">
-          <span className="main-button__text uppercase">
-            подробнее
-            <br className="lg:hidden"/> о бонусном блоке
-          </span>
-        </button>
       </div>
     </section>
   );

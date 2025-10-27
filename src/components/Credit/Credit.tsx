@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ButtonGray from "../Button/ButtonGray";
 
 export default function Credit() {
   return (
@@ -16,7 +17,7 @@ export default function Credit() {
             src={"/credit/line-credit-lg.png"}
             className="w-[592px] h-px lg:absolute left-0 bottom-47 xl:bottom-6 2xl:bottom-57"
           />
-          <div className="hidden py-8 px-4 justify-center items-center lg:flex lg:w-[520px] lg:h-[124px] lg:p-0 xl:w-[585px] xl:mb-[15px] 2xl:w-[733px] 2xl:mr-[25px]">
+          {/* <div className="hidden py-8 px-4 justify-center items-center lg:flex lg:w-[520px] lg:h-[124px] lg:p-0 xl:w-[585px] xl:mb-[15px] 2xl:w-[733px] 2xl:mr-[25px]">
             <button
               className="w-full h-[58px] lg:h-[124px] relative overflow-hidden rounded-[10px] lg:rounded-[22px] cursor-pointer z-10
     bg-transparent border-none box-border shadow-[0_4px_10px_rgba(0,0,0,0.3)]
@@ -28,6 +29,9 @@ export default function Credit() {
                 Оформить рассрочку
               </span>
             </button>
+          </div> */}
+          <div className="hidden lg:block lg:w-[520px] xl:w-[585px] 2xl:w-[733px]">
+          <ButtonGray>Оформить рассрочку</ButtonGray>
           </div>
         </div>
         <div className="py-[21px] px-[31px] flex flex-col bg-[rgba(0,255,255,0.2)] lg:rounded-tl-[22px] lg:justify-center lg:items-center gap-11 xl:justify-start xl:px-[60xp] xl:py-14 xl:gap-16 2xl:p-[76px] 2xl:gap-8">

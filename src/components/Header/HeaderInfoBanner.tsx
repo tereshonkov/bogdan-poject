@@ -6,7 +6,7 @@ export default function HeaderInfoBanner() {
           старт 20 января
         </span>
       </div>
-      <button className="absolute top-2 right-5 rounded-[3px] border border-[rgba(0,255,255,1)] backdrop-blur-[2.54px] bg-[rgba(0,255,255,0.15)] text-[rgba(0,255,255,1)] text-[11px] px-2.5 py-[3px] z-10   w-[89px] font-sans md:w-[142px] md:text-[16px] md:top-5 md:right-6 lg:w-[140px] xl:right-7">
+      <button className="absolute top-2 right-5 rounded-[3px] border border-[rgba(0,255,255,1)] backdrop-blur-[2.54px] bg-[rgba(0,255,255,0.15)] text-[rgba(0,255,255,1)] text-[11px] px-2.5 py-[3px] z-10   w-[89px] font-sans md:w-[142px] md:text-[16px] md:top-5 md:right-6 lg:w-[140px] xl:right-7 hover:bg-[rgba(0,255,255,0.3)] cursor-pointer">
         Поддержка
       </button>
     </>
